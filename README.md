@@ -1,7 +1,9 @@
 
 # 📬 Email GPT Assistant
 
-A smart assistant that generates automated replies to emails using advanced language models like GPT.
+Email GPT Assistant is an AI-powered application that generates and sends smart, context-aware email replies using large language models (LLMs) like Gemini, DeepSeek, and Moonshot via the OpenRouter API.
+
+The app automatically classifies incoming messages, crafts personalized responses through dynamic prompt generation, and visualizes usage stats with Plotly — all within an intuitive Streamlit-based interface.
 
 ## 🧠 Features
 
