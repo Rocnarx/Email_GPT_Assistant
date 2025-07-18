@@ -12,7 +12,7 @@ A smart assistant that generates automated replies to emails using advanced lang
 - One-click email sending from the interface.
 
 ## 🚀 Technologies Used
-
+- ✅ All language models are free to use thanks to the OpenRouter platform, which provides access to powerful APIs like Gemini, DeepSeek, and more.  
 - 🧠 FastAPI (Backend API)
 - 🎨 Streamlit (Web Interface)
 - ✉️ OpenRouter API (Gemini, DeepSeek, Moonshot, etc.)
