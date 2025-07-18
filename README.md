@@ -14,7 +14,6 @@ The app automatically classifies incoming messages, crafts personalized response
 - One-click email sending from the interface.
 
 ## 🚀 Technologies Used
-- ✅ All language models are free to use thanks to the OpenRouter platform, which provides access to powerful APIs like Gemini, DeepSeek, and more.  
 - 🧠 FastAPI (Backend API)
 - 🎨 Streamlit (Web Interface)
 - ✉️ OpenRouter API (Gemini, DeepSeek, Moonshot, etc.)
