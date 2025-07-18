@@ -27,7 +27,7 @@ if st.button("Generar respuesta"):
     else:
         with st.spinner("Generando respuesta..."):
             respuesta = requests.post(
-                "http://127.0.0.1:8001/responder",
+                "http://127.0.0.1:8000/responder",
                 headers={"Content-Type": "application/json"},
                 data=json.dumps({"correo": correo, "modelo": modelo_seleccionado})
             )
@@ -47,7 +47,7 @@ tab1, tab2 = st.tabs(["📂 Historial", "📊 Estadísticas"])
 with tab1:
     st.subheader("📂 Historial de correos")
 
-    historial_response = requests.get("http://127.0.0.1:8001/historial")
+    historial_response = requests.get("http://127.0.0.1:8000/historial")
     if historial_response.status_code == 200:
         historial_data = historial_response.json()
 
@@ -74,7 +74,7 @@ with tab1:
                     if st.button(f"📧 Enviar respuesta a {email_origen}", key=f"enviar_{i}"):
                         try:
                             send_result = requests.post(
-                            "http://127.0.0.1:8001/enviar",
+                            "http://127.0.0.1:8000/enviar",
                             json={
                             "destinatario": email_origen,
                             "asunto": "Re: tu consulta",

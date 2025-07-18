@@ -25,7 +25,7 @@ modelos_demo = [
 def enviar_con_reintento(payload, intentos=3):
     for intento in range(intentos):
         res = requests.post(
-            "http://127.0.0.1:8001/responder",
+            "http://127.0.0.1:8000/responder",
             headers={"Content-Type": "application/json"},
             json=payload
         )
